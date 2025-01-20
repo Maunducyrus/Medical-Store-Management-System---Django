@@ -1,10 +1,10 @@
-import config from "../utils/Config";
 import React, { Component } from "react";
 import usericon from "adminbsb-materialdesign/images/user.png";
+import Config from "../utils/Config";
 import { Link } from "react-router-dom";
 
 
-class Sidebar extends Component {
+class Sidebar extends React.Component {
   state={
     defaultClass: "btn-group user-helper-dropdown",
   };
@@ -21,7 +21,7 @@ class Sidebar extends Component {
     document.removeEventListener("mousedown", this.handleMouseClick, false);
   }
   handleMouseClick=(event)=>{
-    console.log("ok");
+    // console.log("ok");
     if(event.target === this.divref.current) {
       return;
     } else {
@@ -35,15 +35,14 @@ class Sidebar extends Component {
     }else {
       this.setState({ defaultClass: "btn-group user-helper-dropdown" });
     }
-  }
+  };
   render() {
     return (
       <section>
         <aside id="leftsidebar" className="sidebar">
           <div className="user-info">
             <div className="image">
-              <img
-                src={usericon} width="48" height="48" alt="User" />
+              <img src={usericon} width="48" height="48" alt="User" />
             </div>
             <div className="info-container">
               <div
@@ -87,19 +86,14 @@ class Sidebar extends Component {
                 position: "relative",
                 overflow: "hidden",
                 width: "auto",
-                // height: "57px",
               }}
             >
               <ul
                 className="list"
-                style={{
-                  overflow: "hidden",
-                  width: "auto",
-                  // height: "57px",
-                }}
+                style={{ overflow: "hidden", width: "auto" }}
               >
                 {/* adding more items to the sidebar */}
-                {config.sidebarItem.map((item)=> (
+                {Config.sidebarItem.map((item)=> (
                 <li 
                   key={item.index}
                   className={
@@ -113,10 +107,8 @@ class Sidebar extends Component {
                     <i className="material-icons">{item.icons}</i>
                     <span>{item.title}</span>
                   </Link>
-                </li>)
-                )}
-                {/* <li className="header">MAIN NAVIGATION</li> */}
-              
+                </li>
+               ))}              
               </ul>
               <div
                 className="slimScrollBar"

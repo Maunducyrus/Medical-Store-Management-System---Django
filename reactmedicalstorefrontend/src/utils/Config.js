@@ -1,4 +1,4 @@
-class config{
+class Config{
     static loginUrl="http://127.0.0.1:8000/api/gettoken/";
     static homeUrl="/home";
 
@@ -10,4 +10,4 @@ class config{
     ]
 }
 
-export default config; 
+export default Config; 
