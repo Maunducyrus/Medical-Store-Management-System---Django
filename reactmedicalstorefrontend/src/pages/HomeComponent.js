@@ -35,10 +35,10 @@ class HomeComponets extends Component {
                 <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div className="info-box bg-light-green hover-expand-effect">
                         <div className="icon">
-                            <i className="material-icons">forum</i>
+                            <i className="material-icons">bookmark</i>
                         </div>
                         <div className="content">
-                            <div className="text">NEW COMMENTS</div>
+                            <div className="text">TOTAL MEDICINES</div>
                             <div className="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20">243</div>
                         </div>
                     </div>
