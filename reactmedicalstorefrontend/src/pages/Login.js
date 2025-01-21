@@ -58,8 +58,7 @@ class Login extends React.Component {
         </div>
       );
     }
-     else if (this.state.loginStatus === 3) 
-    else if (this.state.loginStatus === 1) {
+     else if (this.state.loginStatus === 3) {
       return (
         <div class="alert alert-success">
           <strong>Login Successfull!</strong>
