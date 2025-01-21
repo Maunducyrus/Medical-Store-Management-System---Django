@@ -13,10 +13,10 @@ class HomeComponets extends Component {
                 <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div className="info-box bg-pink hover-expand-effect">
                         <div className="icon">
-                            <i className="material-icons">playlist_add_check</i>
+                            <i className="material-icons">bookmark</i>
                         </div>
                         <div className="content">
-                            <div className="text">NEW TASKS</div>
+                            <div className="text">TOTAL REQUEST</div>
                             <div className="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20">125</div>
                         </div>
                     </div>
