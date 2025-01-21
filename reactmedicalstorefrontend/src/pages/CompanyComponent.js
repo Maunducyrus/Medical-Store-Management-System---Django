@@ -1,7 +1,7 @@
 // import React from 'react';
 import React, { Component } from 'react';
 
-class CompanyComponent extends Component {
+class CompanyComponent extends React.Component {
     render() {
         return <section className="content">
         <div className="container-fluid">
