@@ -152,7 +152,7 @@ class Login extends React.Component {
                       type="submit"
                       disabled={this.state.btnDisabled}
                     >
-                      SIGN IN
+                      {/* SIGN IN */}
                     </button>
                   </div>
                 </div>
