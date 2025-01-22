@@ -1,4 +1,4 @@
-import React { }from "react";
+import React from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import "adminbsb-materialdesign/plugins/bootstrap/css/bootstrap.css";
 import "adminbsb-materialdesign/plugins/node-waves/waves.css";
@@ -8,6 +8,7 @@ import AuthHandler from "../utils/AuthHandler";
 import { reactLocalStorage } from "reactjs-localstorage";
 import { Navigate } from "react-router-dom";
 import Config from "../utils/Config";
+import { Component } from "react";
 
 class Login extends React.Component {
   state = {
