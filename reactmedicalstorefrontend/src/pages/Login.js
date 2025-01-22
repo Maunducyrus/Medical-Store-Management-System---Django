@@ -1,4 +1,4 @@
-import React from "react";
+import React { }from "react";
 import GoogleFontLoader from "react-google-font-loader";
 import "adminbsb-materialdesign/plugins/bootstrap/css/bootstrap.css";
 import "adminbsb-materialdesign/plugins/node-waves/waves.css";
