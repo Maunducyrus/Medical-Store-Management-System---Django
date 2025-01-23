@@ -15,6 +15,8 @@ root.render(
   <Router>
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path={Config.logoutPageUrl} element={<LogoutComponent />} />
+
       
       {/* Wrap the PrivateRouteNew with Route */}
       <Route
