@@ -12,6 +12,8 @@ class Sidebar extends React.Component {
   constructor(props) {
     super(props);
     this.divref=React.createRef();
+    this.divref2=React.createRef();
+
   }
 
   componentWillMount(){
@@ -22,7 +24,7 @@ class Sidebar extends React.Component {
   }
   handleMouseClick=(event)=>{
     // console.log("ok");
-    if(event.target === this.divref.current) {
+    if(event.target === this.divref.current || event.target === this.divref2.current) {
       console.log("Click Element")
       return;
     } else {
