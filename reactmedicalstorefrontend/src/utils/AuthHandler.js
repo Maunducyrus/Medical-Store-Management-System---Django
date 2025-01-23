@@ -44,7 +44,20 @@ static CheckTokenExpiry(){
     var expire=false;
     var token=this.getLoginToken();
     var tokenArray=token.split(".")
-    
+    var jwt = JSON.parse(atob(tokenArray[1]));
+
+    if(jwt && jwt.exp && Number.isFinite(jwt.exp)){
+        expire=jwt.expire*1000;
+    }
+    else{
+        expire=false;
+    }
+
+    if(!expire){
+        return false;
+    }
+
+    return Date.now()>expire;
 }
 
 }
