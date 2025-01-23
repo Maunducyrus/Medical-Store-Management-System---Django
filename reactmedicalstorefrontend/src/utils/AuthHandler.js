@@ -26,6 +26,15 @@ static loggedIn() {
         return false;
     }
 }
+
+static getLoginToken(){
+    return reactLocalStorage.get("token")
+}
+
+static getRefreshToken(){
+    return reactLocalStorage.get("refresh")
+}
+
 }
 
 export default AuthHandler;

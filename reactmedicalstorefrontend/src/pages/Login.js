@@ -8,7 +8,7 @@ import AuthHandler from "../utils/AuthHandler";
 import { reactLocalStorage } from "reactjs-localstorage";
 import { Navigate } from "react-router-dom";
 import Config from "../utils/Config";
-import { Component } from "react";
+// import { Component } from "react";
 
 class Login extends React.Component {
   state = {
