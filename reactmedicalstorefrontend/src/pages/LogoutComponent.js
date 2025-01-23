@@ -6,3 +6,5 @@ class LogoutComponent extends React.Component {
         return < Navigate to="/" />
     }
 }
+
+export default LogoutComponent;
