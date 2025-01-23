@@ -3,9 +3,9 @@ import AuthHandler from '../utils/AuthHandler';
 
 class CompanyComponent extends React.Component {
 
-    componentDidMount(){
-        console.log(AuthHandler.CheckTokenExpiry());
-    }
+    // componentDidMount(){
+    //     console.log(AuthHandler.CheckTokenExpiry());
+    // }
 
     render() {
         return <section className="content">
