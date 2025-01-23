@@ -40,6 +40,12 @@ static logoutUser(){
     reactLocalStorage.remove("refresh");
 }
 
+static CheckTokenExpiry(){
+    var expire=false;
+    var token=this.getLoginToken();
+    var tokenArray=token.split(".")
+}
+
 }
 
 export default AuthHandler;

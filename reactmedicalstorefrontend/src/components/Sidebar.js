@@ -74,6 +74,8 @@ class Sidebar extends React.Component {
                     <a
                       href={Config.logoutPageUrl}
                       className="waves-effect waves-block"
+                      ref={this.divref2}
+
                     >
                       <i className="material-icons">input</i>Sign Out
                     </a>
