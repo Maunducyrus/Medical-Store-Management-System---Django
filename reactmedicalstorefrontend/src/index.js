@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import MainComponent from './components/MainComponent';
 import CompanyComponent from './pages/CompanyComponent';
 import HomeComponent from './pages/HomeComponent';
+import LogoutComponent from './pages/LogoutComponent'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
