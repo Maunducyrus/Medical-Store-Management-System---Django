@@ -35,6 +35,11 @@ static getRefreshToken(){
     return reactLocalStorage.get("refresh")
 }
 
+static logoutUser(){
+    reactLocalStorage.remove("token");
+    reactLocalStorage.remove("refresh");
+}
+
 }
 
 export default AuthHandler;
