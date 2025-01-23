@@ -23,8 +23,10 @@ class Sidebar extends React.Component {
   handleMouseClick=(event)=>{
     // console.log("ok");
     if(event.target === this.divref.current) {
+      console.log("Click Element")
       return;
     } else {
+      console.log("Click Outside")
       this.setState({ defaultClass: "btn-group user-helper-dropdown" });
     }
   }
